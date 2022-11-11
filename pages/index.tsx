@@ -126,7 +126,7 @@ export default function Home() {
           </Navbar.Brand>
 
           <Navbar.Content>
-            <Navbar.Link href="#">Projects</Navbar.Link>
+            <Navbar.Link href="/">Projects</Navbar.Link>
           </Navbar.Content>
         </Navbar>
       </div>
