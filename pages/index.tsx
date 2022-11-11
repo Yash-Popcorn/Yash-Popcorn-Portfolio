@@ -105,7 +105,7 @@ export default function Home() {
             <Card.Footer>
               {
                 imageContent[_props.value.projectName as any].map(value => {
-                  return <AvatarCard image={value}/>
+                  return <AvatarCard key={Math.floor(Math.random() * 100)} image={value}/>
                 })
               }
             </Card.Footer>
@@ -137,7 +137,7 @@ export default function Home() {
         }}>
           {
             content && content.map((value) => {
-              return <ProjectCard value={value}/>
+              return <ProjectCard key={Math.floor(Math.random() * 100)} value={value}/>
             })
           }
         </Grid.Container>
