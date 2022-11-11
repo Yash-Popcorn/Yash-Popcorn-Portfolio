@@ -104,9 +104,10 @@ export default function Home() {
 
             <Card.Footer>
               {
-                imageContent[_props.value.projectName as any].map(value => {
+                imageContent[_props.value.projectName as keyof typeof imageContent].map(value => {
                   return <AvatarCard key={Math.floor(Math.random() * 100)} image={value}/>
                 })
+                
               }
             </Card.Footer>
           </Card>
