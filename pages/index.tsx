@@ -58,6 +58,7 @@ export default function Home() {
 
   const AvatarCard = (_props: {image: string}) => {
     return <Avatar
+      key={`${Date.now()}`}
       size="lg"
       src={_props.image}
       color="gradient"
