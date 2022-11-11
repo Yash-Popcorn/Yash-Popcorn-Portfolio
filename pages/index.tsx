@@ -120,7 +120,7 @@ export default function Home() {
         <Navbar isBordered>
           <Navbar.Brand>
             <Text b color="inherit">
-                Yash's Portfolio
+                {"Yash's Portfolio"}
             </Text>
           </Navbar.Brand>
 
