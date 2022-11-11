@@ -47,7 +47,7 @@ export default function Home() {
       for (const i in result) {
         info.push({
           name: result[i].name,
-          projectName: `Project ${Number(i) + 1}`,
+          projectName: "Project " + (i),
           html_url: result[i].html_url
         })
       }
@@ -58,7 +58,7 @@ export default function Home() {
 
   const AvatarCard = (_props: {image: string}) => {
     return <Avatar
-      key={`${Date.now()}`}
+      key={Date.now()}
       size="lg"
       src={_props.image}
       color="gradient"
