@@ -47,7 +47,7 @@ export default function Home() {
       for (const i in result) {
         info.push({
           name: result[i].name,
-          projectName: "Project " + (i),
+          projectName: 'Project ' + (Number(i) + 1),
           html_url: result[i].html_url
         })
       }
